@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image';
-import profilePicture from '../../public/images/profile/developer-pic-1.png'
+// import { useTheme } from 'next-themes';
+// import profiledark from '../../public/images/profile/bgdark1.PNG'
+// import profilelight from '../../public/images/profile/bgone.PNG'
+import profileImage from '../../public/images/profile/Profile bg.png'
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/icon';
@@ -9,6 +12,7 @@ import HireMe from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Home() {
+ 
   return (
     <>
       <Head>
@@ -20,8 +24,8 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 md-pt-8'>
           <div className=' flex items-center justify-content-between w-full lg:flex-col'>
               <div className='w-1/2 md:w-full'>
-                <Image src= {profilePicture} alt =" BKE" 
-                className = 'w-full h-auto lg:hidden md:inline-block md:w-full ' 
+                <Image src= {profileImage} alt =" BKE" 
+                className = 'w-full h-auto bg-blend-normal lg:hidden md:inline-block md:w-full' 
                 priority
                 sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw'
                  />
@@ -31,7 +35,7 @@ export default function Home() {
                 <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-3xl xm:!text-base'/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
                   As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                  Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                  Explore my latest projects and articles, showcasing my expertise in React.js, Ruby on Rails Django,  and web development.
                   </p>
                   <div className='flex items-center self-start mt-2 lg:self-center'>
                     <Link href="/dummy.pdf" target={'_blank'}
