@@ -50,7 +50,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       </button>
     );
   };
-const Navbar = () => {
+const Navigation = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,7 +58,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full relative px-32 py-8 font-medium flex items-center justify-between text-teal-900 dark:text-light z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full fixed px-32 py-8 font-medium flex items-center justify-between text-teal-900 dark:text-teal-400 z-10 lg:px-16 md:px-12 sm:px-8">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
@@ -79,7 +79,7 @@ const Navbar = () => {
           }`}
         ></span>
       </button>
-      <div className="min-w-[70vw] flex justify-between items-center lg:hidden">
+      <div className="w-full backdrop-blur-md py-4 flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/BybEnoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -99,7 +99,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/Bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -108,7 +108,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/bett-kipngeno-enock"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -117,7 +117,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.pinterest.com/bettenock968/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ sclae: 0.9 }}
@@ -126,7 +126,7 @@ const Navbar = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://medium.com/@bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -148,12 +148,14 @@ const Navbar = () => {
           </button>
         </nav>
       </div>
-      {
+
+    <div className="relative">
+    {
         isOpen ?
         <motion.div 
         initial = {{scale:0, opacity:1, x: "-50%", y: "-50%"}}
         animate = {{scale:1, opacity:1}}
-        className="w-full flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
+        className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed pt-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 backdrop-blur-md rounded-lg py-32">
         <nav className="flex items-center flex-col justify-center">
           <CustomMobileLink href="/" title="Home" className="" toggle={handleClick}/>
           <CustomMobileLink href="/about" title="About" className="" toggle={handleClick}/>
@@ -164,7 +166,7 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center flex-wrap mt-2">
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/BybEnoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -173,7 +175,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/Bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -182,7 +184,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/bett-kipngeno-enock"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -191,7 +193,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.pinterest.com/bettenock968/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -200,7 +202,7 @@ const Navbar = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://medium.com/@bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -223,12 +225,13 @@ const Navbar = () => {
         </nav>
       </motion.div>
         : null
-      }
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      }    
+    </div>
+      <div className=" bg-red xl:hidden md:flex absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
       </div>
     </header>
   );
 };
 
-export default Navbar;
+export default Navigation;

@@ -57,7 +57,7 @@ const onSubmit = async () => {
             <meta name="description" content="Web development road map" />
         </Head>
         <main className="flex w-full flex-col items-center justify-center dark:text-light">
-            <Layout className="pt-12">
+            <Layout className="pt-32 sm:pt-32 md:pt-48 lg:pt-52">
             <Heading className="text-center mb-10">
                 <p className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Let&apos;s Spark Creativity Over a Cup of Coffee! </span> join me for an Inspiring Conversation.</p>
             </Heading>

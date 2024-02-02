@@ -38,7 +38,7 @@ const Education = () => {
 
   return (
     <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Experience</h2>
+        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Education</h2>
         <div ref= {containerRef} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
 
           
@@ -50,7 +50,7 @@ const Education = () => {
             </motion.div>
             <ul className='w-full flex flex-col items-center justify-between ml-4 xs:ml-2'>
                <Info
-                type= "Software Engineer"
+                type= "Remote Full Stack Web Development Program, Full Time	"
                 time="2017-2022"
                 place="www.google.com"
                 info= "Mountain View, CARelevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."

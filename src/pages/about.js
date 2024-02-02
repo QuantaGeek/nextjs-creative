@@ -2,13 +2,12 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profileImage from "../../public/images/profile/eduimage.PNG";
 import Image from "next/image";
 
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Education from "@/components/Education";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -40,7 +39,7 @@ const about = () => {
         <meta name="description" content="Web development road map" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16 bg-heroPattern">
+        <Layout className="pt-32 sm:pt-32 md:pt-48 lg:pt-52">
           <AnimatedText text="Passion Fuels Purpose!!" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -48,7 +47,7 @@ const about = () => {
                 Biograpy
               </h2>
               <p className="font-medium">
-                - Hi, Im CodeBucks, a web developer and UI/UX designer with a
+                - Hi, Im  <span className="text-transparent text-lg bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-semibold">Bett Enock </span>a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 4 years of experience in the field. I
                 am always looking for new and innovative ways to bring my
@@ -67,10 +66,10 @@ const about = () => {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8">
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xs:p-2 xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%]  h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
-                src={profilePic}
+                src={profileImage}
                 alt="BKE"
                 className="w-full h-auto rounded-2xl"
                 priority
@@ -106,7 +105,6 @@ const about = () => {
           </div>
           <Skills />
           <Experience />
-          <Education />
         </Layout>
       </main>
     </>
