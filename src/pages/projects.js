@@ -16,7 +16,7 @@ import { motion } from 'framer-motion'
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github}) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, tech}) => {
     return (
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%]  h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
@@ -35,7 +35,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) => {
                    <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
                 <p className='my-2 text-sm text-dark dark:text-light sm:text-sm'>{summary}</p>
-
+                <ul className='flex gap-2 text-xs text-slate-400'>
+                    <li>{tech}</li>
+                </ul>
                 <div className='mt-2 flex items-center'>
                     <Link href={github} target='_blank' className='w-10'>
                     <GithubIcon />
@@ -44,13 +46,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) => {
                         Visit Project
                     </Link>
                 </div>
+
             </div>
 
           
         </article>
     )
 }
-const Project = ({ title, type, summary, img, link, github}) => {
+const Project = ({ title, type, summary, tech, img, link, github}) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-6 relative'>
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
@@ -65,7 +68,9 @@ const Project = ({ title, type, summary, img, link, github}) => {
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                    <h2 className='my-2 w-full text-left text-3xl lg:text-2xl font-bold'>{title}</h2>
                 </Link>
-
+                <div className='w-full mt-2 text-xs text-slate-400 flex items-center justify-between'>
+                    {tech}
+                </div>
                 <div className=' w-full mt-2 flex items-center justify-between'>
                     <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base'>
                         Visit 
@@ -75,6 +80,7 @@ const Project = ({ title, type, summary, img, link, github}) => {
                     </Link>
                    
                 </div>
+
             </div>
         </article>
     )
@@ -85,7 +91,7 @@ const projects = () => {
     <>
      <Head>
             <title> BettEnock | Projeects Page</title>
-            <meta name='description' content='Web develoment road map'/>
+            <meta name='description' content='Web development road map'/>
             
     </Head>
     <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
@@ -103,6 +109,7 @@ const projects = () => {
                     link='https://jade-rabanadas-479b96.netlify.app/'
                     github='https://github.com/Bettenoch/medical-appointments-front-end'
                     type='Featured Project'
+                    tech='React, PostgreSQL, Ruby on Rails,Tailwind CSS, Vite'
                     />
                 </div>
 
@@ -116,6 +123,7 @@ const projects = () => {
                     link='https://todays-pandemic-status-app.onrender.com/'
                     github='https://github.com/Bettenoch/Metrics-Application'
                     type='Pair-Programming'
+                    tech='React, React-Redux'
                     />
                 </div>
 
@@ -129,6 +137,7 @@ const projects = () => {
                     link='https://graciano1997.github.io/js_moduleII_capstone/dist/'
                     github='https://github.com/Bettenoch/js_moduleII_capstone'
                     type='Solo Project'
+                    tech='React, React-Redux'
                     />
                 </div>
                 <div className='col-span-12 '>
@@ -140,6 +149,7 @@ const projects = () => {
                     link='https://github.com/Bettenoch/fintech_transact'
                     github='https://fintechtransact.onrender.com/'
                     type='Solo Project'
+                    tech='React, React-Redux, Ruby on Rails, React-Bootstrap, PostgreSQL'
                     />
                 </div>
 
@@ -153,6 +163,7 @@ const projects = () => {
                     link='https://github.com/Bettenoch/Recipe-app'
                     github='https://github.com/Bettenoch/Recipe-app'
                     type='Featured Project'
+                    tech='React, React-Redux, Ruby on Rails, Tailwind CSS, PostgreSQL'
                     />
                 </div>
                 <div className='col-span-6 sm:col-span-12'>
@@ -165,6 +176,7 @@ const projects = () => {
                     link='https://github.com/Bettenoch/frontend'
                     github='https://github.com/Bettenoch/frontend'
                     type='Featured Project'
+                    tech='React, React-Redux, Django, Bootstrap, PostgreSQL'
                     />
                 </div>
             </div>
