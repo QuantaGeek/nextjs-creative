@@ -58,7 +58,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full relative backdrop-blur-sm px-32 py-8 font-medium flex items-center justify-between text-teal-900 dark:text-teal-400 z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full relative px-32 py-8 font-medium flex items-center justify-between text-teal-900 dark:text-light z-10 lg:px-16 md:px-12 sm:px-8">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
@@ -74,7 +74,7 @@ const Navbar = () => {
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${
             isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           }`}
         ></span>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com/BybEnoch"
+            href="https://twitter.com"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -99,7 +99,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://github.com/Bettenoch"
+            href="https://twitter.com"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -108,7 +108,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/bett-kipngeno-enock/"
+            href="https://twitter.com"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -117,7 +117,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://www.pinterest.com/bettenock968/"
+            href="https://twitter.com"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ sclae: 0.9 }}
@@ -126,7 +126,7 @@ const Navbar = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://medium.com/@bettenoch"
+            href="https://twitter.com"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
