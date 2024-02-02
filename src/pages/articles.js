@@ -86,11 +86,11 @@ const articles = () => {
     <>
         <Head>
             <title> BettEnock | Articles Page</title>
-            <meta name='description' content='Web develoment road map'/> 
+            <meta name='description' content='Web development road map'/> 
         </Head>
 
         <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
-            <Layout className='pt-16'>
+            <Layout className='pt-32 sm:pt-32 md:pt-48 lg:pt-52'>
                 <AnimatedText text='Words can change the world!!' className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
                 <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-15'>
                   
