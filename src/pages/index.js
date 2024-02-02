@@ -18,7 +18,7 @@ export default function Home() {
        
       </Head>
       <main className='flex flex-col items-center text-dark dark:text-light w-full min-h-screen'>
-        <Layout className='pt-24 '>
+        <Layout className='pt-16 xs:pt-32 '>
           <div className=' flex items-center justify-content-between w-full lg:flex-col'>
               <div className='w-1/2 md:w-full pt-2'>
                 <Image src= {profileImage} alt =" BKE" 
