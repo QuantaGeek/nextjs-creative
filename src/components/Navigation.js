@@ -90,7 +90,7 @@ const Navigation = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/BybEnoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -99,7 +99,7 @@ const Navigation = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/Bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -108,7 +108,7 @@ const Navigation = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/bett-kipngeno-enock"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -117,7 +117,7 @@ const Navigation = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.pinterest.com/bettenock968/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ sclae: 0.9 }}
@@ -126,7 +126,7 @@ const Navigation = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://medium.com/@bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -166,7 +166,7 @@ const Navigation = () => {
 
         <nav className="flex items-center justify-center flex-wrap mt-2">
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/BybEnoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -175,7 +175,7 @@ const Navigation = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/Bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -184,7 +184,7 @@ const Navigation = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/bett-kipngeno-enock"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -193,7 +193,7 @@ const Navigation = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.pinterest.com/bettenock968/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -202,7 +202,7 @@ const Navigation = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://medium.com/@bettenoch"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
