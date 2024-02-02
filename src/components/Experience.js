@@ -19,7 +19,7 @@ const Info = ({position, company, companyLink, time, address, work}) => {
                 <span className='capitalize font-medium text-medium pb-4 text-dark/75 dark:text-light/75 xs:text-sm'>
                     {time} | {address}
                 </span>
-                <p className='font-medium w-full mt-2 md:text-sm'>
+                <p className='font-medium w-full mt-2 xs:text-sm'>
                     {work}
                 </p>
             </motion.div>
@@ -39,7 +39,7 @@ const Experience = () => {
 
   return (
     <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Experience</h2>
+        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-2xl md:mb-16'>Experience</h2>
         <div ref= {containerRef} className='w-[75%] lg:w-[90%] md:w-full mx-auto relative'>
 
           
